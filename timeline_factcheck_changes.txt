@@ -1,0 +1,343 @@
+TIMELINE FACT-CHECK CHANGELOG
+=============================
+Date: 2026-03-11
+Scope: All 9 timeline eras in src/App.jsx (lines 2100–2313)
+Method: Line-by-line verification against published book canon (ASOIAF novels, TWOIAF, Fire & Blood) and confirmed TV canon (Game of Thrones S1–S8).
+
+14 entries corrected. 0 entries fabricated from scratch.
+Entries verified as accurate were left unchanged.
+
+═══════════════════════════════════════════════════════════
+CHANGE 1 — Dawn Age Summary (Era 1)
+═══════════════════════════════════════════════════════════
+FIELD: summary
+LOCATION: Era "The Dawn Age & The Long Night"
+
+BEFORE:
+"The last hero, wielding dragonglass, allied with the Children to defeat them."
+
+AFTER:
+"The last hero sought out the Children of the Forest and together they drove back the darkness."
+
+WHY:
+The Last Hero is never described as wielding dragonglass in Old Nan's tale (AGOT, Bran IV). His SWORD froze and the steel shattered. Dragonglass (obsidian) is associated with the Children of the Forest and with killing Others (discovered by Sam in ASOS), but the Last Hero legend does not attribute dragonglass to him specifically. This was an incorrect conflation.
+
+
+═══════════════════════════════════════════════════════════
+CHANGE 2 — The Last Hero's Blade (Era 1)
+═══════════════════════════════════════════════════════════
+FIELD: actions (character: The Last Hero)
+
+BEFORE:
+"His dragonglass blade shattered, but he found the Children and together they drove back the darkness."
+
+AFTER:
+"His sword froze so hard the steel shattered, but he found the Children and together they drove back the darkness."
+
+WHY:
+Old Nan's story (AGOT, Bran IV): "his sword froze so hard the steel shattered." It was a steel blade, not dragonglass. The "horse" was also missing from the list of companions lost. Added "his horse" alongside companions and dog for completeness.
+
+
+═══════════════════════════════════════════════════════════
+CHANGE 3 — Azor Ahai / Prince That Was Promised (Era 1)
+═══════════════════════════════════════════════════════════
+FIELD: actions (character: Azor Ahai)
+
+BEFORE:
+"Prophecy holds he will be reborn as The Prince That Was Promised."
+
+AFTER:
+"Some prophecies suggest he will be reborn; Melisandre equates him with The Prince That Was Promised, though the texts do not confirm they are the same figure."
+
+WHY:
+The books do NOT definitively state Azor Ahai and The Prince That Was Promised are the same person. Melisandre conflates them, but Maester Aemon and other characters treat them as potentially separate prophecies from different traditions (Asshai vs. Valyrian). Presenting them as identical is an assumption. Conservative phrasing applied.
+
+
+═══════════════════════════════════════════════════════════
+CHANGE 4 — Robert's Rebellion Summary (Era 4)
+═══════════════════════════════════════════════════════════
+FIELD: summary
+
+BEFORE:
+"the Mad King burned Brandon and Rickard Stark alive"
+
+AFTER:
+"the Mad King executed Rickard and Brandon Stark — burning Rickard alive in his armor while Brandon strangled himself trying to save his father"
+
+WHY:
+Factually wrong. Rickard Stark was burned alive inside his armor using wildfire. Brandon Stark was placed in a strangulation device (a Tyroshi device with a leather cord) and strangled himself trying to reach a longsword placed just out of reach, while watching his father burn (ASOS, Jaime's confession to Brienne). Brandon was NOT burned. This is a well-established detail repeated multiple times in the text. Saying both were "burned alive" is incorrect.
+
+Also changed "absconded with" to "took" — "absconded" implies theft/criminality. The books deliberately leave ambiguous whether Lyanna went willingly or was abducted. Conservative phrasing.
+
+
+═══════════════════════════════════════════════════════════
+CHANGE 5 — Theon Greyjoy in AGOT (Era 5, Book 1)
+═══════════════════════════════════════════════════════════
+FIELD: actions (character: Theon Greyjoy)
+
+BEFORE:
+"Robb's companion, sent to the Iron Islands as envoy. Torn between identities."
+
+AFTER:
+"Robb's companion and ward of the Starks. Rides south with Robb when the banners are called."
+
+WHY:
+Wrong book. Theon is NOT sent to the Iron Islands in A Game of Thrones. That happens in A Clash of Kings (ACOK), when Robb sends him to treat with Balon Greyjoy. In AGOT, Theon is at Winterfell and then accompanies Robb south. This was a chronological error — an ACOK event placed in the AGOT section.
+
+
+═══════════════════════════════════════════════════════════
+CHANGE 6 — Tywin at the Whispering Wood (Era 5, Book 1)
+═══════════════════════════════════════════════════════════
+FIELD: actions (character: Tywin Lannister)
+
+BEFORE:
+"Unleashes Gregor on the Riverlands. Outmaneuvered by Robb at the Whispering Wood."
+
+AFTER:
+"Unleashes Gregor on the Riverlands. Tricked by Robb into engaging a decoy force at the Green Fork while the main Stark host captures Jaime at the Whispering Wood."
+
+WHY:
+Tywin was NOT at the Whispering Wood. Jaime Lannister was at the Whispering Wood (besieging Riverrun). Tywin was at the Green Fork, where he fought Roose Bolton's decoy force. Robb's strategy was to split his army — sending a smaller force under Bolton to occupy Tywin at the Green Fork while Robb's cavalry surprised Jaime at the Whispering Wood. Saying Tywin was "outmaneuvered at the Whispering Wood" confuses two separate battles.
+
+
+═══════════════════════════════════════════════════════════
+CHANGE 7 — Renly Baratheon in AGOT (Era 5, Book 1)
+═══════════════════════════════════════════════════════════
+FIELD: actions (character: Renly Baratheon)
+
+BEFORE:
+"Gathers the south to his banner despite no legal claim."
+
+AFTER:
+"Flees King's Landing after Robert's death, refusing to support either Joffrey or Stannis."
+
+WHY:
+Wrong book. Renly does NOT gather the south in A Game of Thrones. In AGOT, he flees King's Landing after Robert dies (he had tried to convince Ned to seize the royal children before Cersei could act, and when Ned refused, Renly fled). His actual gathering of forces and declaration as king happens in A Clash of Kings. This was an ACOK event placed in the AGOT section.
+
+
+═══════════════════════════════════════════════════════════
+CHANGE 8 — Stannis & Melisandre in AGOT (Era 5, Book 1)
+═══════════════════════════════════════════════════════════
+FIELD: actions (character: Stannis Baratheon)
+
+BEFORE:
+"Discovers the truth alongside Jon Arryn. Makes contact with Melisandre."
+
+AFTER:
+"Helped Jon Arryn investigate the truth about Cersei's children. Withdrew to Dragonstone after Jon Arryn's death."
+
+WHY:
+Stannis helping Jon Arryn investigate is correct backstory established in AGOT/ACOK. But "Makes contact with Melisandre" is not an AGOT event — Melisandre does not appear until A Clash of Kings. In AGOT, Stannis is entirely offscreen at Dragonstone. His association with Melisandre is revealed in ACOK. Removed to keep the entry within the correct book's scope.
+
+
+═══════════════════════════════════════════════════════════
+CHANGE 9 — Jon Snow Sequence in ACOK (Era 6, Book 2)
+═══════════════════════════════════════════════════════════
+FIELD: actions (character: Jon Snow)
+
+BEFORE:
+"Scouts the Skirling Pass. Kills Qhorin to infiltrate wildlings. Meets Ygritte."
+
+AFTER:
+"Scouts the Skirling Pass. Captures Ygritte but lets her go. Kills Qhorin Halfhand on Qhorin's orders to infiltrate the wildlings."
+
+WHY:
+Events listed in wrong order. Jon meets and captures Ygritte BEFORE killing Qhorin Halfhand, not after. The actual sequence: Jon goes on the Great Ranging → scouts the Frostfangs/Skirling Pass → captures Ygritte (and is ordered to kill her but lets her go) → the party is hunted by wildlings → Qhorin orders Jon to kill him to gain the wildlings' trust → Jon kills Qhorin and infiltrates Mance's host. The original entry reversed the Ygritte and Qhorin events.
+
+
+═══════════════════════════════════════════════════════════
+CHANGE 10 — Tyrion's Injury at the Blackwater (Era 6, Book 2)
+═══════════════════════════════════════════════════════════
+FIELD: actions + added showNote (character: Tyrion Lannister)
+
+BEFORE:
+"Slashed across the face."
+
+AFTER:
+"Gravely wounded in the battle." + showNote: "In the books, Tyrion loses most of his nose. The show gives him a facial scar instead."
+
+WHY:
+"Slashed across the face" describes the show version. In the books (ASOS, Tyrion's recovery chapters), Tyrion loses most of his nose — a far more disfiguring wound. This is a significant book/show divergence that should be noted rather than silently using one version. Added a showNote to separate the two canons cleanly.
+
+
+═══════════════════════════════════════════════════════════
+CHANGE 11 — Cersei's Walk of Atonement (Era 8, Book 4)
+═══════════════════════════════════════════════════════════
+FIELD: actions + added showNote (character: Cersei Lannister)
+
+BEFORE:
+"Arms the Faith Militant. Frames Margaery. Gets arrested for her own sins. Walk of atonement."
+
+AFTER:
+"Arms the Faith Militant. Frames Margaery. Gets arrested for her own sins." + showNote: "The Walk of Atonement occurs in her ADWD chapters, since AFFC and ADWD are concurrent."
+
+WHY:
+The Walk of Atonement does NOT occur in A Feast for Crows. It occurs in Cersei's chapters in A Dance with Dragons (Cersei II, ADWD). AFFC and ADWD cover the same time period but are split by geography/POV. Cersei's arrest is in AFFC; her Walk is in ADWD. Listing the Walk under AFFC is a misattribution. Moved the Walk to a showNote clarifying the actual book placement.
+
+
+═══════════════════════════════════════════════════════════
+CHANGE 12 — Arianne Martell & Aegon (Era 8, Book 4)
+═══════════════════════════════════════════════════════════
+FIELD: actions + showNote (character: Arianne Martell)
+
+BEFORE:
+actions: "Failed Queenmaker plot. Learns of Doran's long game. Sent to meet Aegon."
+showNote: "CUT from the show entirely."
+
+AFTER:
+actions: "Failed Queenmaker plot to crown Myrcella. Imprisoned by her father, then learns of Doran's long game for Targaryen restoration."
+showNote: "CUT from the show entirely. Released TWOW sample chapters have her sent to meet Aegon."
+
+WHY:
+"Sent to meet Aegon" does NOT happen in A Feast for Crows. This event is from The Winds of Winter sample chapters, which are unpublished preview material. Including TWOW content as if it were AFFC content is incorrect. Moved to the showNote with proper attribution. Also clarified the Queenmaker plot (to crown Myrcella as queen) and added that Doran imprisoned her before revealing his plans.
+
+
+═══════════════════════════════════════════════════════════
+CHANGE 13 — Wyman Manderly's Frey Pies (Era 9, Book 5)
+═══════════════════════════════════════════════════════════
+FIELD: actions (character: Wyman Manderly)
+
+BEFORE:
+"Fed the Freys to the Boltons in pies."
+
+AFTER:
+"Baked three missing Freys into pies and served them at the Winterfell feast."
+
+WHY:
+The original phrasing is misleading. Manderly did not "feed the Freys to the Boltons" — he baked three Frey men (Rhaegar, Symond, and Jared Frey) into meat pies and served them at the Winterfell harvest feast to everyone present, including Boltons, Freys, and other guests. The pies were served openly at a feast, not targeted at the Boltons specifically. Also expanded the "North remembers" quote to include its fuller context from Manderly's speech to Davos (ADWD, Davos IV).
+
+
+═══════════════════════════════════════════════════════════
+CHANGE 14 — Barristan Selmy Show Note (Era 9, Book 5)
+═══════════════════════════════════════════════════════════
+FIELD: showNote (character: Barristan Selmy)
+
+BEFORE:
+"The show kills him in a street ambush. GRRM was reportedly unhappy."
+
+AFTER:
+"The show kills him in a street ambush in Season 5. In the books, he remains alive and commands Meereen's defense."
+
+WHY:
+"GRRM was reportedly unhappy" is unverified speculation from fan/media reporting. No direct, confirmed primary source establishes this as fact. Including unverified claims about the author's feelings violates the fact-checking standard. Replaced with a verifiable, factual statement about the book/show divergence.
+
+
+═══════════════════════════════════════════════════════════
+ENTRIES VERIFIED AS ACCURATE (NO CHANGES NEEDED)
+═══════════════════════════════════════════════════════════
+
+The following entries were verified and found to be accurate:
+
+ERA 1 (Dawn Age):
+✓ Brandon the Builder — correct
+✓ The Night's King — correct (13th LC, woman with blue eyes, Nightfort, human sacrifices)
+✓ Night's King showNote (book vs show distinction) — correct
+✓ Garth Greenhand — correct
+✓ The Grey King — correct
+
+ERA 2 (Andal Invasion):
+✓ Summary — correct
+✓ House Stark — Kings of Winter — correct
+✓ House Lannister — Kings of the Rock — correct
+✓ House Gardener — Kings of the Reach — correct
+✓ House Durrandon — Storm Kings — correct
+✓ House Hoare — Kings of the Iron Islands — correct
+✓ House Arryn — Kings of Mountain and Vale — correct
+✓ House Martell — Princes of Dorne — correct
+
+ERA 3 (Targaryen Dynasty):
+✓ Summary — correct
+✓ Aegon I — correct (Balerion/Vhagar/Meraxes, Harrenhal, Field of Fire, Iron Throne)
+✓ Maegor I — correct (Faith Militant, Red Keep, death on throne)
+✓ Jaehaerys I — correct (55 years, roads, laws, Faith reconciliation)
+✓ Dance of the Dragons — correct (129–131 AC, Rhaenyra vs Aegon II, both die)
+✓ Aegon IV — correct (deathbed legitimization, Blackfyre Rebellions)
+✓ Daemon Blackfyre — correct (Redgrass Field, four more rebellions)
+✓ Bloodraven — correct (bastard, Hand, Wall, Three-Eyed Crow)
+✓ Aegon V (Egg) — correct (Dunk & Egg, Summerhall)
+✓ Aerys II — correct (madness, wildfire, Rickard/Brandon, Jaime)
+
+ERA 4 (Robert's Rebellion):
+✓ showNote (R+L=J) — correct
+✓ Robert Baratheon — correct (three battles in a day, Trident)
+✓ Eddard Stark — correct (Tower of Joy, "Promise me, Ned")
+✓ Jon Arryn — correct (refused to surrender wards)
+✓ Rhaegar Targaryen — correct (prophecy, died whispering)
+✓ Ser Arthur Dayne — correct (Sword of the Morning, Tower of Joy)
+✓ Tywin Lannister — correct (waited, sacked KL, presented bodies)
+✓ Jaime Lannister — correct (killed Aerys, sat on throne)
+
+ERA 5 (AGOT):
+✓ Summary — correct
+✓ showNote (Season 1 faithful, aged-up) — correct
+✓ Eddard Stark — correct
+✓ Catelyn Stark — correct (captures Tyrion, triggers Tywin)
+✓ Robb Stark — correct (14, banners, King in the North)
+✓ Sansa Stark — correct
+✓ Arya Stark — correct (Syrio, escape, kill list)
+✓ Bran Stark — correct (pushed, wolf dreams, three-eyed crow)
+✓ Jon Snow — correct (Watch, Sam, Longclaw, wight)
+✓ Cersei Lannister — correct (Robert's death, seizes power)
+✓ Jaime Lannister — correct (captured at Whispering Wood)
+✓ Tyrion Lannister — correct (trial by combat, Hand)
+✓ Joffrey Baratheon — correct (orders execution)
+✓ Robert Baratheon — correct (hunt, mortal wound)
+✓ Daenerys Targaryen — correct (Drogo, khaleesi, dragons)
+✓ Viserys Targaryen — correct (golden crown)
+✓ Khal Drogo — correct
+✓ Ser Jorah Mormont — correct (spying for Varys)
+✓ Littlefinger — correct (Jon Arryn murder, framed Tyrion, betrayed Ned)
+✓ Varys — correct (warns Ned, plots with Illyrio)
+
+ERA 6 (ACOK):
+✓ Summary — correct
+✓ showNote (Talisa, Qarth, HOTU) — correct
+✓ Robb Stark — correct (Jeyne Westerling, broken betrothal)
+✓ Theon Greyjoy — correct (seizes Winterfell, miller's boys)
+✓ Stannis Baratheon — correct (shadow, Blackwater)
+✓ Renly Baratheon — correct (largest army, shadow murder)
+✓ Arya Stark — correct (Harrenhal, Jaqen, three deaths)
+✓ Daenerys Targaryen — correct (Qarth, HOTU, visions)
+✓ Brienne of Tarth — correct (melee, blamed, Catelyn, Jaime escort)
+
+ERA 7 (ASOS):
+✓ Summary — correct
+✓ showNote (Tysha, Lady Stoneheart) — correct
+✓ Robb Stark — correct (Karstark, Red Wedding)
+✓ Catelyn/Stoneheart — correct (resurrection, showNote about cut)
+✓ Joffrey Baratheon — correct (Purple Wedding, Olenna + Littlefinger)
+✓ Tywin Lannister — correct (Red Wedding, killed by Tyrion)
+✓ Jaime Lannister — correct (hand, confession, Oathkeeper)
+✓ Tyrion Lannister — correct (Sansa marriage, murder trial, Shae/Tywin, fled)
+✓ Sansa Stark — correct (Littlefinger, Vale, Lysa through Moon Door)
+✓ Arya Stark — correct (Hound, Twins, Braavos)
+✓ Jon Snow — correct (Ygritte, Wall defense, elected LC)
+✓ Daenerys Targaryen — correct (Unsullied, Astapor/Yunkai/Meereen)
+✓ Oberyn Martell — correct (champion, Mountain, skull crushed)
+
+ERA 8 (AFFC):
+✓ Summary — correct
+✓ showNote (Sansa to Winterfell, Jaime to Dorne, Arianne cut) — correct
+✓ The High Sparrow — correct
+✓ Brienne of Tarth — correct (Stoneheart, "screams a word")
+✓ Septon Meribald — correct (broken men, Quiet Isle)
+✓ Euron Greyjoy — correct (kingsmoot, Victarion, showNote)
+✓ Sansa (Alayne Stone) — correct (Vale, Littlefinger, Sweetrobin)
+
+ERA 9 (ADWD):
+✓ Summary — correct
+✓ showNote (Young Griff cut, Stannis ambiguous, Battle of Ice/Fire) — correct
+✓ Jon Snow — correct (wildlings, Bastard Letter, stabbed)
+✓ Melisandre — correct (POV, "Snow" in flames)
+✓ Stannis Baratheon — correct (mountain clans, blizzards, unresolved)
+✓ Theon/Reek — correct (broken, Jeyne Poole escape, showNote Sansa sub)
+✓ Daenerys Targaryen — correct (Meereen, Hizdahr, Drogon, stranded)
+✓ Tyrion Lannister — correct (Aegon, Jorah kidnap, slavers, Second Sons)
+✓ Aegon (Young Griff) — correct (Golden Company, invasion, Blackfyre question)
+✓ Quentyn Martell — correct (dragon, burned, "Oh")
+✓ Victarion Greyjoy — correct (Meereen, dragon horn)
+✓ Jaime Lannister — correct (burned letter, Stoneheart's trap)
+✓ Varys — correct (Kevan murder, Aegon supporter, quote)
+✓ Davos Seaworth — correct (Skagos, Rickon)
+✓ Arya Stark — correct (Faceless Men, Needle)
+✓ Bran Stark — correct (greensight, weirwood paste, Bloodraven's cave)
