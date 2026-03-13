@@ -2945,7 +2945,7 @@ export default function ASOIAFComplete() {
       {/* Background — layered, responsive scaling for large screens */}
       <div className="asoiaf-bg-wrapper">
         <img
-          src="/background.png"
+          src={`${import.meta.env.BASE_URL}background.png`}
           alt=""
           className="asoiaf-bg-img"
           fetchPriority="high"
