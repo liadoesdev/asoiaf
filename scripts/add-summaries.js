@@ -25,7 +25,6 @@ function escapeJsString(s) {
 
 function cleanForBooks(bio) {
   if (!bio) return "";
-  // Remove trailing show-only clauses for use as shared text
   let t = bio
     .replace(/\s*In the show[^.]*\.?\s*/gi, " ")
     .replace(/\s*The show[^.]*\.?\s*/gi, " ")
@@ -100,10 +99,7 @@ function getSummaries(node) {
   return { combined, books: bio, tv: bio };
 }
 
-// Match node lines: start with "  { id: " and end with " },"
 const nodeLineRe = /^(\s*\{\s*id:\s*"([^"]+)"[^}]*?)(\s*\},?\s*)$/gm;
-
-// More robust: find lines that contain bio: " and are a single node (one line)
 const lines = content.split("\n");
 const result = [];
 let inGraphNodes = false;
@@ -127,9 +123,6 @@ for (let i = 0; i < lines.length; i++) {
     result.push(line);
     continue;
   }
-  // We are inside graphNodes array
-
-  // Inside graphNodes: detect node line (has id and bio, single line); skip if already has summaries
   if (line.includes("summaries:")) {
     result.push(line);
     continue;
@@ -151,7 +144,6 @@ for (let i = 0; i < lines.length; i++) {
     const node = { id, canon, bio, bookNote, bioBooks, bioTv };
     const summaries = getSummaries(node);
     const sumStr = `summaries: { combined: "${escapeJsString(summaries.combined)}", books: "${escapeJsString(summaries.books)}", tv: "${escapeJsString(summaries.tv)}" }`;
-    // Match end of node: " }, " or " }" - replace with ", " + sumStr + " }, " so we get ...", summaries: { ... } },
     const newLine = line.replace(/,?\s*\}\s*,?\s*$/, ", " + sumStr + " }, ");
     result.push(newLine);
     nodesProcessed++;

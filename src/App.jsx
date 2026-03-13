@@ -1050,7 +1050,6 @@ const graphEdges = [
   { source: "daeron_d", target: "alicent", rel: "Son and mother. Raised away from court in Oldtown, Daeron escaped the toxicity that warped his brothers. Alicent's youngest and arguably her finest child." },
 ];
 
-// Normalize each edge to canon-aware shape: availability { books, tv }, descriptions { combined, books, tv }
 function normalizeEdge(e) {
   const rel = e.rel || "";
   const availability = e.availability || {
@@ -1069,7 +1068,6 @@ function normalizeEdge(e) {
 }
 const normalizedGraphEdges = graphEdges.map(normalizeEdge);
 
-// Canon mode: "combined" | "books" | "tv"
 function getGraphNodesForCanon(nodes, mode) {
   if (mode === "combined") return nodes;
   if (mode === "books") return nodes.filter(n => n.canon === "both" || n.canon === "book");
@@ -1436,7 +1434,6 @@ function GraphView() {
     return ids;
   }, [selectedNode, connectedEdges]);
 
-  // Canon detail view: available modes for the selected character
   const getAvailableCanonModes = useCallback((node) => {
     if (!node) return [];
     if (node.canon === "book") return ["books"];
@@ -1444,7 +1441,6 @@ function GraphView() {
     return ["combined", "books", "tv"];
   }, []);
 
-  // Summary text for the selected canon mode — strict separation: no fallback to combined for Book/TV Only
   const getSummaryForCanon = useCallback((node, mode) => {
     if (!node) return { text: "", isPlaceholder: false };
     if (mode === "combined") return { text: (node.summaries?.combined ?? node.bio) || "", isPlaceholder: false };
@@ -1460,8 +1456,6 @@ function GraphView() {
     }
     return { text: node.bio || "", isPlaceholder: false };
   }, []);
-
-  // connectedEdges are already canon-filtered (from filteredEdges), so no extra filter needed
 
   useEffect(() => {
     const updateSize = () => {
@@ -1522,8 +1516,6 @@ function GraphView() {
     hasAutoFit.current = true;
   }, [tick, dimensions.width, dimensions.height]);
 
-  // If the currently selected node disappears from the filtered graph (e.g. due to canon change),
-  // clear the selection; otherwise preserve it across canon toggles.
   useEffect(() => {
     if (!selectedNode) return;
     const stillPresent = filteredNodes.some(n => n.id === selectedNode);
