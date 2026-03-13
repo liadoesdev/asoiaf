@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1024" />
+    <link rel="icon" type="image/svg+xml" href="/asoiaf/favicon.svg" />
+    <link rel="preload" href="/asoiaf/background.png" as="image" />
+    <title>ASOIAF Complete</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        background: #080706;
+        font-family: 'Source Serif 4', 'Palatino Linotype', Georgia, serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      button, input, a {
+        transition: background 0.25s ease, border-color 0.25s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+      }
+      button:focus-visible, a:focus-visible, input:focus-visible {
+        outline: 2px solid rgba(196, 140, 64, 0.6);
+        outline-offset: 2px;
+      }
+      button:hover:not(:disabled), a:hover {
+        cursor: pointer;
+      }
+      .asoiaf-nav button:not([data-active="true"]):hover {
+        background: rgba(255, 255, 255, 0.04) !important;
+        border-color: rgba(255, 255, 255, 0.1) !important;
+        color: #b8a078 !important;
+      }
+      .asoiaf-nav button[data-active="true"]:hover {
+        box-shadow: 0 0 28px rgba(139, 58, 42, 0.35) !important;
+      }
+      a[href*="ko-fi"]:hover {
+        box-shadow: 0 6px 28px rgba(139, 58, 42, 0.45) !important;
+        transform: translateY(-1px);
+      }
+      input::placeholder {
+        color: rgba(168, 152, 126, 0.5);
+      }
+      /* Background layer — responsive scaling across screen sizes */
+      .asoiaf-bg-wrapper {
+        position: fixed;
+        inset: 0;
+        z-index: -2;
+        overflow: hidden;
+        background: #080706;
+      }
+      .asoiaf-bg-img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 42%;
+        image-rendering: -webkit-optimize-contrast;
+        transform: translateZ(0);
+      }
+      /* Large screens: show more artwork, avoid aggressive zoom */
+      @media (min-width: 1920px) {
+        .asoiaf-bg-img {
+          object-fit: contain;
+          object-position: center center;
+        }
+      }
+      /* Ultrawide: preserve composition, no stretch */
+      @media (min-width: 2560px) {
+        .asoiaf-bg-img {
+          object-fit: contain;
+          object-position: center center;
+        }
+      }
+      /* Scrim overlay — content readability, blends letterbox areas on large screens */
+      .asoiaf-scrim {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        background:
+          radial-gradient(ellipse 120% 80% at 50% 20%, transparent 0%, rgba(8,7,6,0.4) 50%, rgba(8,7,6,0.85) 100%),
+          radial-gradient(ellipse 100% 100% at 50% 50%, transparent 20%, rgba(8,7,6,0.5) 70%),
+          linear-gradient(180deg, rgba(8,7,6,0.3) 0%, transparent 25%, transparent 75%, rgba(8,7,6,0.5) 100%);
+      }
+      /* Scrollbar styling */
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: rgba(168, 152, 126, 0.2); border-radius: 3px; }
+      ::-webkit-scrollbar-thumb:hover { background: rgba(168, 152, 126, 0.35); }
+
+      /* Mobile: sticky nav at bottom */
+      @media (max-width: 680px) {
+        .asoiaf-nav {
+          position: fixed !important;
+          bottom: 0 !important;
+          left: 0 !important;
+          right: 0 !important;
+          margin: 0 !important;
+          max-width: none !important;
+          border-radius: 0 !important;
+          z-index: 100;
+          border-top: 1px solid rgba(201, 166, 92, 0.15) !important;
+          border-bottom: none !important;
+          border-left: none !important;
+          border-right: none !important;
+          padding: 6px 8px !important;
+          padding-bottom: max(6px, env(safe-area-inset-bottom)) !important;
+          box-shadow: 0 -4px 20px rgba(0,0,0,0.5) !important;
+        }
+        .asoiaf-nav button {
+          padding: 8px 4px !important;
+          font-size: 10px !important;
+          min-height: 48px !important;
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: center !important;
+          justify-content: center !important;
+          gap: 2px !important;
+        }
+        .asoiaf-nav button span {
+          display: block !important;
+          margin: 0 !important;
+          font-size: 18px !important;
+        }
+        .info-panel {
+          max-height: 38vh !important;
+          transform: none !important;
+        }
+        /* Map stacks vertically on mobile */
+        .map-flex-container {
+          flex-direction: column !important;
+        }
+        .map-flex-container > div {
+          min-width: 0 !important;
+          flex-basis: auto !important;
+        }
+        .map-location-panel {
+          max-width: none !important;
+          max-height: 45vh !important;
+        }
+      }
+      @media (min-width: 1920px) {
+        .asoiaf-scrim {
+          background:
+            radial-gradient(ellipse 80% 65% at 50% 50%, transparent 25%, rgba(8,7,6,0.4) 60%, rgba(8,7,6,0.92) 100%),
+            radial-gradient(ellipse 120% 80% at 50% 20%, transparent 0%, rgba(8,7,6,0.35) 50%, rgba(8,7,6,0.82) 100%),
+            radial-gradient(ellipse 100% 100% at 50% 50%, transparent 20%, rgba(8,7,6,0.5) 70%),
+            linear-gradient(180deg, rgba(8,7,6,0.3) 0%, transparent 25%, transparent 75%, rgba(8,7,6,0.5) 100%);
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="/asoiaf/assets/index-C35k_BBP.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
